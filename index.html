@@ -306,34 +306,11 @@
     footer a { color: var(--accent); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
 
-    /* ───── 社区动态 (Giscus) ───── */
-    .feed-card {
-      background: var(--card-bg);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      margin-bottom: 60px;
-    }
-
-    .feed-header {
-      background: linear-gradient(90deg, var(--deep), var(--mid));
-      color: #fff;
-      padding: 18px 28px;
-      font-size: 1rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .feed-body { padding: 28px 32px 32px; }
-
     /* ───── 响应式 ───── */
     @media (max-width: 640px) {
       nav { display: none; }
       .hero { padding: 60px 5vw 50px; }
       main { padding: 40px 4vw; }
-      .feed-body { padding: 20px 16px; }
     }
   </style>
 </head>
@@ -347,7 +324,6 @@
   </a>
   <nav>
     <a href="#map">线路图</a>
-    <a href="#feed">社区动态</a>
     <a href="#links">相关链接</a>
     <a href="#notice">公告</a>
   </nav>
@@ -435,34 +411,6 @@
         <span class="card-arrow">开始游戏 →</span>
       </a>
 
-    </div>
-  </section>
-
-  <!-- 社区动态 (Giscus) -->
-  <section id="feed">
-    <h2 class="section-title">💬 社区动态</h2>
-    <div class="feed-card">
-      <div class="feed-header">
-        📝 留言板 &nbsp;·&nbsp; Community Feed
-      </div>
-      <div class="feed-body">
-        <script src="https://giscus.app/client.js"
-          data-repo="2776565038-netizen/shangdu-metro"
-          data-repo-id="R_kgDOSsR_Ng"
-          data-category="General"
-          data-category-id="DIC_kwDOSsR_Ns4C-KAi"
-          data-mapping="specific"
-          data-term="上都地铁社区留言板"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="top"
-          data-theme="light"
-          data-lang="zh-CN"
-          crossorigin="anonymous"
-          async>
-        </script>
-      </div>
     </div>
   </section>
 
